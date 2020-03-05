@@ -15,7 +15,7 @@ if (clientChoice === null) {
 } else if (totalPrice > credits) {
   alert('Недостаточно средств на вашем счету');
 
-} else if (totalPrice < credits) {
+} else if (totalPrice <= credits) {
   alert(`Вы купили ${clientChoice} дроидов, на счету осталось ${credits - totalPrice} кредитов`);
 } else if (totalPrice === credits) {
 
