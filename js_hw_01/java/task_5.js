@@ -27,8 +27,8 @@ if (clientChoice === null) {
       break;
     default:
       alert("В выбранную страну доставка не доступна");
-  }
 
+  }
   alert(`Доставка в ${clientChoice} будет стоить ${price} кредитов`);
 
 }
