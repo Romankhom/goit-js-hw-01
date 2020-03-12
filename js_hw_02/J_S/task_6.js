@@ -14,16 +14,14 @@ do {
 
 } while (input !== null);
 
-if (input === null) {
+if (numbers.length > 0) {
   for (const number of numbers) {
     total += number;
 
     console.log(total)
   }
-}
-
-if (input === null && numbers < 1) {
-  alert("Вы не вводили числа");
-} else {
   alert(`Cумма введенных чисел равна: ${total}`);
+
+} else {
+  alert("Вы не вводили числа");
 }
