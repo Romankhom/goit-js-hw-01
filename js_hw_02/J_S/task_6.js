@@ -25,5 +25,5 @@ if (input === null) {
 if (input === null && numbers < 1) {
   alert("Вы не вводили числа");
 } else {
-  alert(`Общая сумма введенных чисел равна: ${total}`);
+  alert(`Cумма введенных чисел равна: ${total}`);
 }

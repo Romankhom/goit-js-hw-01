@@ -9,14 +9,14 @@ const calculateEngravingPrice = function (message, engravingWord) {
 
 console.log(
   calculateEngravingPrice(
-    'Proin sociis natoque et magnis parturient montes mus',
+    'Proin sociis natoque et magnisup parturient montes mus',
     10,
   ),
 ); // 80
 
 console.log(
   calculateEngravingPrice(
-    'Proin sociis natoque et magnis parturient montes mus',
+    'Proin sociis natoque et magnisup parturient montes mus',
     20,
   ),
 ); // 160
