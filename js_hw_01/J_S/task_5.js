@@ -29,7 +29,8 @@ if (clientChoice === null) {
       alert("В выбранную страну доставка не доступна");
 
   }
-  if (price > 0)
+  if (price > 0) {
     alert(`Доставка в ${clientChoice} будет стоить ${price} кредитов`);
+  }
 
 }
