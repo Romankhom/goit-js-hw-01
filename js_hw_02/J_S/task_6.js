@@ -23,7 +23,7 @@ if (input === null) {
 }
 
 if (input === null && numbers < 1) {
-  alert("Не введено ни одного числа");
+  alert("Вы не вводили числа");
 } else {
   alert(`Общая сумма введенных чисел равна: ${total}`);
 }
