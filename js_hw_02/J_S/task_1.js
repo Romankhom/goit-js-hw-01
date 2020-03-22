@@ -8,6 +8,7 @@ const logItems = function (array) {
   }
 
 };
+console.log(array)
 
 logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
 
