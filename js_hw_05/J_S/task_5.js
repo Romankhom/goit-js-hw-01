@@ -24,17 +24,14 @@ class Car {
    *  distance - общий киллометраж, изначально 0
    */
   constructor({
-    speed = 0,
     price,
     maxSpeed,
-    isOn = false,
-    distance = 0
   }) {
-    this._speed = speed;
+    this._speed = 0;
     this._price = price;
     this._maxSpeed = maxSpeed;
-    this._isOn = isOn;
-    this._distance = distance;
+    this._isOn = false;
+    this._distance = 0;
   }
 
   /*
@@ -74,7 +71,9 @@ class Car {
    * не больше чем значение свойства maxSpeed
    */
   accelerate(value) {
-    if (this._speed + value <= this._maxSpeed) this._speed += value;
+    if (this._speed + value <= this._maxSpeed) {
+      this._speed += value;
+    }
   }
 
   /*
@@ -82,7 +81,9 @@ class Car {
    * при условии что результирующая скорость не меньше нуля
    */
   decelerate(value) {
-    if (this._speed - value >= 0) this._speed -= value;
+    if (this._speed - value >= 0) {
+      this._speed -= value;
+    }
 
   }
 
@@ -91,7 +92,9 @@ class Car {
    * но только в том случае если машина заведена!
    */
   drive(hours) {
-    if (this._isOn) this._distance += hours * this._speed;
+    if (this._isOn) {
+      this._distance += hours * this._speed;
+    }
   }
 }
 
@@ -117,3 +120,5 @@ Car.getSpecs(mustang);
 console.log(mustang.price); // 2000
 mustang.price = 4000;
 console.log(mustang.price); // 4000
+
+// =================================================================================
