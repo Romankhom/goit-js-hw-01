@@ -11,10 +11,10 @@ const ingredients = [
 
 const ul = document.querySelector('#ingredients');
 
-function createList(elem) {
-  const list = document.createElement('li');
-  list.textContent = elem;
-  ul.append(list);
-}
+const liItem = ingredients.map(ingredientItem => {
+  const ingredient = document.createElement("li");
+  ingredient.textContent = ingredientItem;
+  return ingredient;
+});
 
-ingredients.reduce((acc, el) => acc + createList(el), '');
+ul.append(...liItem);
