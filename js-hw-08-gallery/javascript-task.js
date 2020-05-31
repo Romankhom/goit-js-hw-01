@@ -25,6 +25,9 @@ lightBox.addEventListener("click", handleClose);
 document.addEventListener("keydown", handleKeyPress);
 function handleClick(e) {
   e.preventDefault();
+  if (event.target.nodeName !== "IMG") {
+    return;
+  }
   lightBox.classList.add("is-open");
   lightBoxImage.src = e.target.dataset.source;
 }
