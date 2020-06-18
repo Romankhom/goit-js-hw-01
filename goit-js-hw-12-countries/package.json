@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/romankhom/goit-js-hw/goit-js-hw-12-countries.git"
+    "url": "git+https://github.com/Romankhom/goit-js-hw/goit-js-hw-12-countries.git"
   },
   "keywords": [],
   "author": "Roman Khomenko <homenko.r.v@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/romankhom/goit-js-hw/goit-js-hw-12-countries/issues"
+    "url": "https://github.com/Romankhom/goit-js-hw/goit-js-hw-12-countries/issues"
   },
-  "homepage": "https://romankhom.github.io/goit-js-hw/goit-js-hw-12-countries",
+  "homepage": "https://Romankhom.github.io/goit-js-hw/goit-js-hw-12-countries",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
