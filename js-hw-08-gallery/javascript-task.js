@@ -23,6 +23,14 @@ galleryList.insertAdjacentHTML("afterbegin", addItems);
 galleryList.addEventListener("click", handleClick);
 lightBox.addEventListener("click", handleClose);
 document.addEventListener("keydown", handleKeyPress);
+
+const closePopUp = (e) => {
+  if (lightBox.classList.contains("is-open") && e.target !== lightBoxImage) {
+    lightBox.classList.remove("is-open");
+  }
+  return;
+};
+
 function handleClick(e) {
   e.preventDefault();
   if (event.target.nodeName !== "IMG") {
